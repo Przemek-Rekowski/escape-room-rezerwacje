@@ -1,0 +1,75 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Komp\\Desktop\\escape room rezerwacje\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{35CAB4E5-359D-4543-B339-E3AD31234B91}|WebApp\\WebApp.csproj|c:\\users\\komp\\desktop\\escape room rezerwacje\\webapp\\views\\escaperooms\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{35CAB4E5-359D-4543-B339-E3AD31234B91}|WebApp\\WebApp.csproj|solutionrelative:webapp\\views\\escaperooms\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{35CAB4E5-359D-4543-B339-E3AD31234B91}|WebApp\\WebApp.csproj|c:\\users\\komp\\desktop\\escape room rezerwacje\\webapp\\views\\escaperooms\\detail.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{35CAB4E5-359D-4543-B339-E3AD31234B91}|WebApp\\WebApp.csproj|solutionrelative:webapp\\views\\escaperooms\\detail.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{35CAB4E5-359D-4543-B339-E3AD31234B91}|WebApp\\WebApp.csproj|c:\\users\\komp\\desktop\\escape room rezerwacje\\webapp\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{35CAB4E5-359D-4543-B339-E3AD31234B91}|WebApp\\WebApp.csproj|solutionrelative:webapp\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1147171901:0:{83107a3e-496a-485e-b455-16ddb978e55e}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Komp\\Desktop\\escape room rezerwacje\\WebApp\\Views\\EscapeRooms\\Index.cshtml",
+              "RelativeDocumentMoniker": "WebApp\\Views\\EscapeRooms\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Komp\\Desktop\\escape room rezerwacje\\WebApp\\Views\\EscapeRooms\\Index.cshtml",
+              "RelativeToolTip": "WebApp\\Views\\EscapeRooms\\Index.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAbAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-27T20:51:20.762Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Detail.cshtml",
+              "DocumentMoniker": "C:\\Users\\Komp\\Desktop\\escape room rezerwacje\\WebApp\\Views\\EscapeRooms\\Detail.cshtml",
+              "RelativeDocumentMoniker": "WebApp\\Views\\EscapeRooms\\Detail.cshtml",
+              "ToolTip": "C:\\Users\\Komp\\Desktop\\escape room rezerwacje\\WebApp\\Views\\EscapeRooms\\Detail.cshtml",
+              "RelativeToolTip": "WebApp\\Views\\EscapeRooms\\Detail.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-27T20:51:18.102Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Komp\\Desktop\\escape room rezerwacje\\WebApp\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "WebApp\\Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Komp\\Desktop\\escape room rezerwacje\\WebApp\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "WebApp\\Views\\Home\\Index.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-27T20:51:11.286Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

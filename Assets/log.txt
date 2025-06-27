@@ -1,0 +1,451 @@
+Executing non-query:
+create table if not exists Room (
+    Id INTEGER not null,
+    Name TEXT not null,
+    Description TEXT null,
+    Difficulty INTEGER not null,
+    Capacity INTEGER not null,
+    Price REAL not null,
+    primary key (Id)
+);
+
+Executing non-query:
+create table if not exists Reservation (
+    Id INTEGER not null,
+    UserId INTEGER not null,
+    RoomId INTEGER not null,
+    PlayerCount INTEGER not null,
+    CheckIn TEXT not null,
+    CheckOut TEXT not null,
+    primary key (Id),
+    foreign key (UserId)
+        references User (Id)
+            on delete cascade
+            on update no action,
+    foreign key (RoomId)
+        references Room (Id)
+            on delete cascade
+            on update no action
+);
+
+Executing non-query:
+create table if not exists User (
+    Id INTEGER not null,
+    FirstName TEXT not null,
+    LastName TEXT not null,
+    Email TEXT not null,
+    PhoneNumber TEXT not null,
+    Password TEXT not null,
+    IsAdmin INTEGER not null,
+    primary key (Id)
+);
+
+Executing non-query:
+create table if not exists Review (
+    Id INTEGER not null,
+    UserId INTEGER not null,
+    RoomId INTEGER not null,
+    Text TEXT not null,
+    Rating INTEGER not null,
+    primary key (Id),
+    foreign key (UserId)
+        references User (Id)
+            on delete cascade
+            on update no action,
+    foreign key (RoomId)
+        references Room (Id)
+            on delete cascade
+            on update no action
+);
+
+Executing query:
+select Id, Name, Description, Difficulty, Capacity, Price 
+from Room;
+
+Executing query:
+select Id, Name, Description, Difficulty, Capacity, Price 
+from Room 
+where
+    Id = 1;
+
+Executing query:
+select Id, UserId, RoomId, Text, Rating 
+from Review 
+where
+    RoomId = 1;
+
+Executing query:
+select Id, FirstName, LastName, Email, PhoneNumber, Password, IsAdmin 
+from User 
+where
+    Id = 1;
+
+Executing query:
+select Id, Name, Description, Difficulty, Capacity, Price 
+from Room 
+where
+    Id = 1;
+
+Executing query:
+select Id, FirstName, LastName, Email, PhoneNumber, Password, IsAdmin 
+from User 
+where
+    Id = 3;
+
+Executing query:
+select Id, Name, Description, Difficulty, Capacity, Price 
+from Room 
+where
+    Id = 1;
+
+Executing query:
+select Id, FirstName, LastName, Email, PhoneNumber, Password, IsAdmin 
+from User 
+where
+    Id = 5;
+
+Executing query:
+select Id, Name, Description, Difficulty, Capacity, Price 
+from Room 
+where
+    Id = 1;
+
+Executing query:
+select Id, FirstName, LastName, Email, PhoneNumber, Password, IsAdmin 
+from User 
+where
+    Email = test@test2.pl;
+
+Executing non-query:
+insert into User (FirstName, LastName, Email, PhoneNumber, Password, IsAdmin) 
+values (wsb, test, test@test2.pl, 123456534, 81dc9bdb52d04dc20036dbd8313ed055, False);
+
+Executing scalar:
+SELECT last_insert_rowid()
+
+Executing query:
+select Id, Name, Description, Difficulty, Capacity, Price 
+from Room;
+
+Executing query:
+select Id, Name, Description, Difficulty, Capacity, Price 
+from Room 
+where
+    Id = 1;
+
+Executing query:
+select Id, Name, Description, Difficulty, Capacity, Price 
+from Room 
+where
+    Id = 1;
+
+Executing query:
+select Id, UserId, RoomId, PlayerCount, CheckIn, CheckOut 
+from Reservation 
+where
+    RoomId = 1;
+
+Executing query:
+select Id, FirstName, LastName, Email, PhoneNumber, Password, IsAdmin 
+from User 
+where
+    Id = 3;
+
+Executing query:
+select Id, Name, Description, Difficulty, Capacity, Price 
+from Room 
+where
+    Id = 1;
+
+Executing non-query:
+insert into Reservation (UserId, RoomId, PlayerCount, CheckIn, CheckOut) 
+values (6, 1, 1, 12.06.2025 22:49:00, 30.06.2025 22:49:00);
+
+Executing scalar:
+SELECT last_insert_rowid()
+
+Executing query:
+select Id, UserId, RoomId, PlayerCount, CheckIn, CheckOut 
+from Reservation 
+where
+    UserId = 6;
+
+Executing query:
+select Id, FirstName, LastName, Email, PhoneNumber, Password, IsAdmin 
+from User 
+where
+    Id = 6;
+
+Executing query:
+select Id, Name, Description, Difficulty, Capacity, Price 
+from Room 
+where
+    Id = 1;
+
+Executing query:
+select Id, UserId, RoomId, PlayerCount, CheckIn, CheckOut 
+from Reservation 
+where
+    Id = 9;
+
+Executing query:
+select Id, FirstName, LastName, Email, PhoneNumber, Password, IsAdmin 
+from User 
+where
+    Id = 6;
+
+Executing query:
+select Id, Name, Description, Difficulty, Capacity, Price 
+from Room 
+where
+    Id = 1;
+
+Executing query:
+select Id, UserId, RoomId, PlayerCount, CheckIn, CheckOut 
+from Reservation 
+where
+    Id = 9;
+
+Executing query:
+select Id, FirstName, LastName, Email, PhoneNumber, Password, IsAdmin 
+from User 
+where
+    Id = 6;
+
+Executing query:
+select Id, Name, Description, Difficulty, Capacity, Price 
+from Room 
+where
+    Id = 1;
+
+Executing query:
+select Id, UserId, RoomId, PlayerCount, CheckIn, CheckOut 
+from Reservation 
+where
+    Id = 9;
+
+Executing query:
+select Id, FirstName, LastName, Email, PhoneNumber, Password, IsAdmin 
+from User 
+where
+    Id = 6;
+
+Executing query:
+select Id, Name, Description, Difficulty, Capacity, Price 
+from Room 
+where
+    Id = 1;
+
+Executing non-query:
+insert into Review (UserId, RoomId, Text, Rating) 
+values (6, 1, super elegancko, 4);
+
+Executing scalar:
+SELECT last_insert_rowid()
+
+Executing query:
+select Id, UserId, RoomId, PlayerCount, CheckIn, CheckOut 
+from Reservation 
+where
+    UserId = 6;
+
+Executing query:
+select Id, FirstName, LastName, Email, PhoneNumber, Password, IsAdmin 
+from User 
+where
+    Id = 6;
+
+Executing query:
+select Id, Name, Description, Difficulty, Capacity, Price 
+from Room 
+where
+    Id = 1;
+
+Executing query:
+select Id, Name, Description, Difficulty, Capacity, Price 
+from Room;
+
+Executing query:
+select Id, Name, Description, Difficulty, Capacity, Price 
+from Room 
+where
+    Id = 1;
+
+Executing query:
+select Id, UserId, RoomId, Text, Rating 
+from Review 
+where
+    RoomId = 1;
+
+Executing query:
+select Id, FirstName, LastName, Email, PhoneNumber, Password, IsAdmin 
+from User 
+where
+    Id = 1;
+
+Executing query:
+select Id, Name, Description, Difficulty, Capacity, Price 
+from Room 
+where
+    Id = 1;
+
+Executing query:
+select Id, FirstName, LastName, Email, PhoneNumber, Password, IsAdmin 
+from User 
+where
+    Id = 3;
+
+Executing query:
+select Id, Name, Description, Difficulty, Capacity, Price 
+from Room 
+where
+    Id = 1;
+
+Executing query:
+select Id, FirstName, LastName, Email, PhoneNumber, Password, IsAdmin 
+from User 
+where
+    Id = 5;
+
+Executing query:
+select Id, Name, Description, Difficulty, Capacity, Price 
+from Room 
+where
+    Id = 1;
+
+Executing query:
+select Id, FirstName, LastName, Email, PhoneNumber, Password, IsAdmin 
+from User 
+where
+    Id = 6;
+
+Executing query:
+select Id, Name, Description, Difficulty, Capacity, Price 
+from Room 
+where
+    Id = 1;
+
+Executing non-query:
+create table if not exists Room (
+    Id INTEGER not null,
+    Name TEXT not null,
+    Description TEXT null,
+    Difficulty INTEGER not null,
+    Capacity INTEGER not null,
+    Price REAL not null,
+    primary key (Id)
+);
+
+Executing non-query:
+create table if not exists Reservation (
+    Id INTEGER not null,
+    UserId INTEGER not null,
+    RoomId INTEGER not null,
+    PlayerCount INTEGER not null,
+    CheckIn TEXT not null,
+    CheckOut TEXT not null,
+    primary key (Id),
+    foreign key (UserId)
+        references User (Id)
+            on delete cascade
+            on update no action,
+    foreign key (RoomId)
+        references Room (Id)
+            on delete cascade
+            on update no action
+);
+
+Executing non-query:
+create table if not exists User (
+    Id INTEGER not null,
+    FirstName TEXT not null,
+    LastName TEXT not null,
+    Email TEXT not null,
+    PhoneNumber TEXT not null,
+    Password TEXT not null,
+    IsAdmin INTEGER not null,
+    primary key (Id)
+);
+
+Executing non-query:
+create table if not exists Review (
+    Id INTEGER not null,
+    UserId INTEGER not null,
+    RoomId INTEGER not null,
+    Text TEXT not null,
+    Rating INTEGER not null,
+    primary key (Id),
+    foreign key (UserId)
+        references User (Id)
+            on delete cascade
+            on update no action,
+    foreign key (RoomId)
+        references Room (Id)
+            on delete cascade
+            on update no action
+);
+
+Executing query:
+select Id, FirstName, LastName, Email, PhoneNumber, Password, IsAdmin 
+from User 
+where
+    Email = test@test2.pl;
+
+Executing query:
+select Id, UserId, RoomId, PlayerCount, CheckIn, CheckOut 
+from Reservation 
+where
+    UserId = 6;
+
+Executing query:
+select Id, FirstName, LastName, Email, PhoneNumber, Password, IsAdmin 
+from User 
+where
+    Id = 6;
+
+Executing query:
+select Id, Name, Description, Difficulty, Capacity, Price 
+from Room 
+where
+    Id = 1;
+
+Executing query:
+select Id, Name, Description, Difficulty, Capacity, Price 
+from Room;
+
+Executing query:
+select Id, Name, Description, Difficulty, Capacity, Price 
+from Room 
+where
+    Id = 5;
+
+Executing query:
+select Id, UserId, RoomId, Text, Rating 
+from Review 
+where
+    RoomId = 5;
+
+Executing query:
+select Id, FirstName, LastName, Email, PhoneNumber, Password, IsAdmin 
+from User 
+where
+    Id = 3;
+
+Executing query:
+select Id, Name, Description, Difficulty, Capacity, Price 
+from Room 
+where
+    Id = 5;
+
+Executing query:
+select Id, FirstName, LastName, Email, PhoneNumber, Password, IsAdmin 
+from User 
+where
+    Id = 2;
+
+Executing query:
+select Id, Name, Description, Difficulty, Capacity, Price 
+from Room 
+where
+    Id = 5;
+
